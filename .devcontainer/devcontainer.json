@@ -4,7 +4,7 @@
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
 			"version": "21",
-			"installMaven": "false",
+			"installMaven": "true",
 			"mavenVersion": "3.8.6",
 			"installGradle": "false"
 		}
@@ -22,7 +22,10 @@
 			},
 			"extensions": [
 				"linkedinlearning.linkedinlearning-vscode-theme",
-				"vscjava.vscode-java-pack"
+				"vscjava.vscode-java-pack",
+				"vscjava.vscode-java-test",
+				"vscjava.vscode-java-debug",
+				"redhat.java"
 			]
 		}
 	},
