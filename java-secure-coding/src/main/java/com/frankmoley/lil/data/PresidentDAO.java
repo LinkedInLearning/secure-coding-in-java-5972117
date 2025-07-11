@@ -1,6 +1,7 @@
 package com.frankmoley.lil.data;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -13,13 +14,12 @@ public class PresidentDAO {
 
   public List<President> getByLastName(String lastName) {
     Connection connection = DatabaseUtil.getConnection();
-    String sql = String.format(
-        "select PRESIDENT_ID, FIRST_NAME, MIDDLE_INITIAL, LAST_NAME, EMAIL_ADDRESS from PRESIDENT where LAST_NAME = '%s'",
-        lastName);
+    String sql = "select PRESIDENT_ID, FIRST_NAME, MIDDLE_INITIAL, LAST_NAME, EMAIL_ADDRESS from PRESIDENT where LAST_NAME = ?";
     List<President> resultList = new ArrayList<>();
     try {
-      Statement statement = connection.createStatement();
-      ResultSet resultSet = statement.executeQuery(sql);
+      PreparedStatement statement = connection.prepareStatement(sql);
+      statement.setString(1, lastName);
+      ResultSet resultSet = statement.executeQuery();
       while (resultSet.next()) {
         resultList.add(processResultSet(resultSet));
       }
