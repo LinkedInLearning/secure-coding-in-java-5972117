@@ -5,6 +5,8 @@ This is the repository for the LinkedIn Learning course `Secure Coding in Java`.
 
 ## Course Description
 
+In this course, Frank P Moley III — Principal Software Architect at Vertex, Inc. — shows you how to bring secure coding to the Java ecosystem. Dive into the most common security vulnerabilities that routinely appear and develop your understanding of how to mitigate and prevent these vulnerabilities when writing software. Plus, examine the process for building out a complete secure software lifecycle.
+
 _See the readme file in the main branch for updated instructions and information._
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
@@ -24,24 +26,19 @@ To resolve this issue:
     Add changes to git using this command: git add .
 	Commit changes using this command: git commit -m "some message"
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
 
 ## Instructor
 
-Instructor name
+Frank P Moley III
 
-Instructor description
+Principal Software Architect at Vertex, Inc.
 
                             
 
-Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/).
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/frank-p-moley-iii?u=104).
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
+[lil-course-url]: https://www.linkedin.com/learning/secure-coding-in-java-26544130
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQHSK5r-KuECqw/learning-public-crop_675_1200/B4EZjE2WtYHIAg-/0/1755649240263?e=2147483647&v=beta&t=kENqDjmMv71Qy4zMtfCPVcQWzydVhQ2sfT5op8xzy7A
